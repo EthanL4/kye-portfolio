@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Kye | Portfolio</title>
+<title>Kye | Personal Portfolio</title>
 
 <style>
 *{
@@ -15,59 +15,51 @@
 
 body{
     font-family:'Segoe UI',sans-serif;
-    background:#f4f7fb;
-    color:#333;
+    background:linear-gradient(to bottom,#2b0000,#000000);
+    color:#f5f5f5;
+    line-height:1.6;
 }
 
 header{
-    min-height:100vh;
-    background:linear-gradient(135deg,#2563eb,#1e3a8a);
+    background:linear-gradient(135deg,#ff0000,#3b0000,#000000);
     color:white;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
     text-align:center;
-    padding:20px;
+    padding:100px 20px;
 }
 
 header h1{
     font-size:4rem;
-    margin-bottom:10px;
 }
 
 header p{
-    font-size:1.3rem;
-    margin-bottom:25px;
+    font-size:1.2rem;
+    margin-top:10px;
 }
 
-.btn{
-    display:inline-block;
-    padding:12px 24px;
-    background:white;
-    color:#2563eb;
-    text-decoration:none;
-    border-radius:8px;
-    font-weight:bold;
-    transition:.3s;
-}
-
-.btn:hover{
-    transform:translateY(-3px);
+/* PROFILE CIRCLE (NOW USING COFFEE PHOTO ☕) */
+.profile-pic{
+    display:block;
+    width:220px;
+    height:220px;
+    object-fit:cover;
+    border-radius:50%;
+    margin:30px auto;
+    border:4px solid #ff0000;
+    box-shadow:0 0 25px rgba(255,0,0,.5);
 }
 
 nav{
-    background:#111827;
+    background:#0a0a0a;
     position:sticky;
     top:0;
-    z-index:1000;
+    border-bottom:2px solid #ff0000;
 }
 
 nav ul{
     display:flex;
     justify-content:center;
-    flex-wrap:wrap;
     list-style:none;
+    flex-wrap:wrap;
 }
 
 nav li{
@@ -77,38 +69,32 @@ nav li{
 nav a{
     color:white;
     text-decoration:none;
-    font-weight:600;
+    font-weight:bold;
 }
 
 nav a:hover{
-    color:#60a5fa;
+    color:#ff4d4d;
 }
 
 section{
     max-width:1000px;
     margin:40px auto;
-    background:white;
     padding:35px;
+    background:rgba(20,20,20,.92);
     border-radius:15px;
-    box-shadow:0 4px 15px rgba(0,0,0,.08);
+    border-left:5px solid #ff0000;
 }
 
 h2{
-    color:#1e3a8a;
-    margin-bottom:15px;
+    color:#ff4d4d;
 }
 
 .project{
-    background:#f8fafc;
-    border-left:5px solid #2563eb;
+    background:#111;
     padding:20px;
+    border-left:5px solid #ff0000;
     margin-top:15px;
-    border-radius:8px;
-    transition:.3s;
-}
-
-.project:hover{
-    transform:translateY(-4px);
+    border-radius:10px;
 }
 
 .gallery{
@@ -119,114 +105,147 @@ h2{
 
 .gallery img{
     width:100%;
-    border-radius:10px;
+    border-radius:12px;
 }
 
 footer{
-    background:#111827;
-    color:white;
+    background:#000;
     text-align:center;
-    padding:25px;
-}
-
-.highlight{
-    color:#2563eb;
-    font-weight:bold;
+    padding:20px;
+    border-top:2px solid #ff0000;
 }
 </style>
 </head>
 
 <body>
 
-<header id="home">
-    <h1>Kye</h1>
-    <p>Youth Advocate • Data Enthusiast • Guitar Player</p>
-    <a href="#about" class="btn">Learn More</a>
+<header>
+    <h1>🎸 Kye 🍕</h1>
+    <p>Youth Advocate • Programmer • Guitarist • Dog Owner 🐶</p>
 </header>
+
+<!-- ☕ PROFILE IMAGE (COFFEE PHOTO NOW) -->
+<img src="images/coffee.jpg" alt="Kye Coffee Photo" class="profile-pic">
 
 <nav>
 <ul>
-<li><a href="#home">Home</a></li>
-<li><a href="#about">About</a></li>
-<li><a href="#resume">Resume</a></li>
-<li><a href="#projects">Projects</a></li>
-<li><a href="#photos">Photos</a></li>
+<li><a href="#home">Home 🏠</a></li>
+<li><a href="#about">About 🎸</a></li>
+<li><a href="#resume">Resume 📄</a></li>
+<li><a href="#projects">Projects 💻</a></li>
+<li><a href="#photos">Photos 📸</a></li>
 </ul>
 </nav>
 
-<section id="about">
-<h2>About Me</h2>
+<section id="home">
+
+<h2>🔥 Welcome</h2>
 
 <p>
-Hello! My name is <span class="highlight">Kye</span>. I am a youth advocate,
-technology enthusiast, and aspiring data analyst who enjoys creating
-projects that make a positive impact.
+Hi! I'm <b>Kye</b>, a high school student passionate about coding 💻,
+music 🎸, activism 🤝, and community work.
+</p>
+
+<br>
+
+<h2>🎉 Fun Facts</h2>
+
+<ul>
+<li>🎸 I play guitar</li>
+<li>🍕 I love pizza</li>
+<li>🐶 I have a dog</li>
+<li>💻 I code in Python & HTML</li>
+<li>⚔️ I did fencing</li>
+<li>🗣️ I'm bilingual (English & Spanish)</li>
+<li>🤝 I'm a youth activist</li>
+</ul>
+
+</section>
+
+<section id="about">
+
+<h2>🎸 About Me</h2>
+
+<p>
+I'm a high school student passionate about technology, creativity, and helping my community.
 </p>
 
 <br>
 
 <p>
-I believe in empowering young people, strengthening communities,
-and using technology to solve real-world problems.
+I'm part of a coalition where I help organize peaceful marches, free food events,
+and holiday community gatherings.
 </p>
+
+<br>
+
+<p>
+Outside of that, I enjoy coding projects, playing guitar 🎸, hanging out with friends,
+and spending time with my dog 🐶.
+</p>
+
 </section>
 
 <section id="resume">
-<h2>Resume</h2>
 
-<h3>Areas of Interest</h3>
+<h2>📄 Resume</h2>
+
+<h3>Skills</h3>
 <ul>
-<li>Youth Advocacy</li>
-<li>Community Engagement</li>
-<li>Data Analysis</li>
-<li>Technology & Programming</li>
-<li>Leadership Development</li>
+<li>Python Programming</li>
+<li>HTML Web Development</li>
+<li>Public Speaking</li>
+<li>Leadership</li>
+<li>Community Organizing</li>
+<li>Teamwork</li>
+<li>English & Spanish</li>
 </ul>
 
 <br>
 
-<h3>Skills</h3>
+<h3>Experience</h3>
 <ul>
-<li>Public Speaking</li>
-<li>Research & Analysis</li>
-<li>Leadership & Collaboration</li>
-<li>HTML & CSS</li>
-<li>Project Organization</li>
+<li>Organized community marches</li>
+<li>Helped run free food events</li>
+<li>Supported holiday community programs</li>
+<li>Performed guitar at school 🎸</li>
+<li>Member of fencing team ⚔️</li>
 </ul>
+
 </section>
 
 <section id="projects">
-<h2>Projects</h2>
+
+<h2>💻 Projects</h2>
 
 <div class="project">
-<h3>Dataset Analysis Project</h3>
-<p>Analyzed large datasets to identify patterns and communicate findings.</p>
+<h3>🎮 2D Platformer Game</h3>
+<p>Built a platformer game using Python with movement and levels.</p>
 </div>
 
 <div class="project">
-<h3>Community Research</h3>
-<p>Used data to better understand community issues and opportunities.</p>
+<h3>🌐 This Website</h3>
+<p>Designed and built this portfolio using HTML & CSS.</p>
 </div>
 
-<div class="project">
-<h3>Personal Website</h3>
-<p>Designed and built a portfolio website using HTML and CSS.</p>
-</div>
 </section>
 
 <section id="photos">
-<h2>Photo Gallery</h2>
+
+<h2>📸 Photo Gallery</h2>
 
 <div class="gallery">
-<img src="https://via.placeholder.com/400x300?text=Photo+1" alt="Photo 1">
-<img src="https://via.placeholder.com/400x300?text=Photo+2" alt="Photo 2">
-<img src="https://via.placeholder.com/400x300?text=Photo+3" alt="Photo 3">
-<img src="https://via.placeholder.com/400x300?text=Photo+4" alt="Photo 4">
+
+<img src="images/friends.jpg" alt="Friends">
+<img src="images/dog.jpg" alt="My Dog">
+<img src="images/coffee.jpg" alt="Me Coffee Photo">
+
 </div>
+
 </section>
 
 <footer>
-<p>© 2026 Kye | Portfolio Website</p>
+<p>🎸 Kye | Built with code, music, and pizza 🍕</p>
 </footer>
 
 </body>
